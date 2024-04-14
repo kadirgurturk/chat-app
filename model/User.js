@@ -27,7 +27,10 @@ const userSchema = new mongoose.Schema(
             type: Date,
             default: Date.now()
         },
-        photoId: String,
+        photoId: {
+            type: Number,
+            default: 0
+        },
         slug: String
     }
 )
